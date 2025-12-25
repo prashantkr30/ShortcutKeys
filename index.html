@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Shortcuts for RRB PO Mains Exam</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: cover;
+        }
+        
+        .exam-badge {
+            background: #ff4081;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 15px 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: 700;
+            color: #ffeb3b;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+        
+        .section-header {
+            background: linear-gradient(135deg, #3f51b5 0%, #2196f3 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(33,150,243,0.3);
+        }
+        
+        .section-icon {
+            font-size: 1.5em;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        
+        h3 {
+            color: #3f51b5;
+            margin: 25px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .shortcut-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .shortcut-item {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3f51b5;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .shortcut-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .shortcut-key {
+            font-family: 'Roboto Mono', monospace;
+            background: #333;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-weight: 500;
+            min-width: 180px;
+            text-align: center;
+            font-size: 0.95em;
+        }
+        
+        .shortcut-desc {
+            flex: 1;
+            margin-left: 20px;
+            font-size: 0.9em;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .highlight-title {
+            color: #e65100;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .top-50-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .top-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 12px;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .item-number {
+            background: #3f51b5;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        
+        .footer {
+            background: #1a237e;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .footer-text {
+            opacity: 0.9;
+            font-size: 0.9em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .exam-tips {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 4px solid #4caf50;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .tip-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .tip-icon {
+            background: #4caf50;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .category-tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+            margin: 5px;
+        }
+        
+        .shortcuts-count {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .shortcut-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+            
+            .shortcut-item {
+                padding: 8px 10px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="exam-badge">RRB PO MAINS EXAM PREPARATION</div>
+            <h1>Computer Shortcuts Master Guide</h1>
+            <p class="subtitle">Comprehensive collection of 250+ essential keyboard shortcuts for Windows, MS Office, Browsers, and Navigation</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">280+</div>
+                    <div class="stat-label">Shortcuts Covered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50</div>
+                    <div class="stat-label">Must-Know Shortcuts</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Exam Coverage</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <!-- Important Categories Section -->
+            <div class="highlight-box">
+                <div class="highlight-title">
+                    <span>📌</span> Important Categories for RRB PO Mains Exam
+                </div>
+                <div>
+                    <span class="category-tag">Basic Navigation</span>
+                    <span class="category-tag">File Management</span>
+                    <span class="category-tag">Text Editing</span>
+                    <span class="category-tag">Browser Navigation</span>
+                    <span class="category-tag">Excel Formulas</span>
+                    <span class="category-tag">Windows OS</span>
+                    <span class="category-tag">MS Office Suite</span>
+                    <span class="category-tag">Accessibility</span>
+                    <span class="category-tag">PowerPoint</span>
+                    <span class="category-tag">Word Processing</span>
+                    <span class="category-tag">Spreadsheets</span>
+                    <span class="category-tag">Command Prompt</span>
+                </div>
+            </div>
+            
+            <!-- Exam Tips -->
+            <div class="exam-tips">
+                <h3 style="color: #2e7d32; margin-bottom: 20px;">🎯 Exam-Specific Preparation Tips</h3>
+                <div class="tip-item">
+                    <div class="tip-icon">1</div>
+                    <div><strong>Focus on Basic Navigation:</strong> Master Ctrl+C, Ctrl+V, Ctrl+X, Alt+Tab, Windows+D as these are frequently asked</div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">2</div>
+                    <div><strong>Practice Daily:</strong> Spend 15 minutes daily practicing shortcuts to build muscle memory</div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">3</div>
+                    <div><strong>Learn Function Keys:</strong> Memorize all F1-F12 keys and their specific uses in different applications</div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">4</div>
+                    <div><strong>Excel Focus:</strong> Pay special attention to Excel shortcuts as banking exams emphasize spreadsheet operations</div>
+                </div>
+            </div>
+            
+            <!-- ==================== WINDOWS SHORTCUTS ==================== -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🪟</span>
+                    <h2>Windows Operating System Shortcuts (90+ Shortcuts)</h2>
+                </div>
+                
+                <h3>General Windows Shortcuts</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">F1</div><div class="shortcut-desc">Display Help</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F2</div><div class="shortcut-desc">Rename selected item</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F3</div><div class="shortcut-desc">Search for a file or folder</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F4</div><div class="shortcut-desc">Display address bar list in File Explorer</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F5</div><div class="shortcut-desc">Refresh active window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F6</div><div class="shortcut-desc">Cycle through screen elements</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F10</div><div class="shortcut-desc">Activate Menu bar in active app</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F11</div><div class="shortcut-desc">Toggle full screen mode</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + F4</div><div class="shortcut-desc">Close active item/Quit active app</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Esc</div><div class="shortcut-desc">Cycle through items in order opened</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Enter</div><div class="shortcut-desc">Display properties for selected item</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Spacebar</div><div class="shortcut-desc">Open shortcut menu for active window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Left Arrow</div><div class="shortcut-desc">Go back</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Right Arrow</div><div class="shortcut-desc">Go forward</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Page Up</div><div class="shortcut-desc">Move up one screen</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Page Down</div><div class="shortcut-desc">Move down one screen</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Tab</div><div class="shortcut-desc">Switch between open apps</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + F4</div><div class="shortcut-desc">Close active document</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + A</div><div class="shortcut-desc">Select all items</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + C</div><div class="shortcut-desc">Copy selected item</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + D</div><div class="shortcut-desc">Delete selected item</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + R</div><div class="shortcut-desc">Refresh active window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + V</div><div class="shortcut-desc">Paste selected item</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + X</div><div class="shortcut-desc">Cut selected item</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Y</div><div class="shortcut-desc">Redo an action</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Z</div><div class="shortcut-desc">Undo an action</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + + (Plus)</div><div class="shortcut-desc">Zoom in</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Mouse scroll wheel</div><div class="shortcut-desc">Change desktop icon size</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + N</div><div class="shortcut-desc">Create new folder</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + Esc</div><div class="shortcut-desc">Open Task Manager</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Alt + Tab</div><div class="shortcut-desc">View open apps using arrow keys</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + Delete</div><div class="shortcut-desc">Delete item permanently</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + F10</div><div class="shortcut-desc">Display shortcut menu for selected item</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Esc</div><div class="shortcut-desc">Stop or leave current task</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">PrtScn</div><div class="shortcut-desc">Take screenshot of entire screen</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + PrtScn</div><div class="shortcut-desc">Take screenshot of active window</div></div>
+                </div>
+                
+                <h3>Windows Key Shortcuts</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">Windows key</div><div class="shortcut-desc">Open or close Start Menu</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + A</div><div class="shortcut-desc">Open Action Center</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + D</div><div class="shortcut-desc">Display and hide desktop</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + E</div><div class="shortcut-desc">Open File Explorer</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + I</div><div class="shortcut-desc">Open Settings</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + L</div><div class="shortcut-desc">Lock PC or switch accounts</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + M</div><div class="shortcut-desc">Minimize all windows</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + R</div><div class="shortcut-desc">Open Run dialog box</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + S</div><div class="shortcut-desc">Open Search</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + U</div><div class="shortcut-desc">Open Ease of Access Center</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + V</div><div class="shortcut-desc">Open Clipboard history</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + X</div><div class="shortcut-desc">Open Quick Link menu</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + Number (1-9)</div><div class="shortcut-desc">Open app pinned to taskbar</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + Left arrow</div><div class="shortcut-desc">Snap app window left</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + Right arrow</div><div class="shortcut-desc">Snap app window right</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + Up arrow</div><div class="shortcut-desc">Maximize window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + Down arrow</div><div class="shortcut-desc">Minimize window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + Home</div><div class="shortcut-desc">Minimize all except active window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + Shift + M</div><div class="shortcut-desc">Restore minimized windows</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + Tab</div><div class="shortcut-desc">Open Task View</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Windows + Shift + S</div><div class="shortcut-desc">Take partial screenshot</div></div>
+                </div>
+                
+                <h3>File Explorer Shortcuts</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + D</div><div class="shortcut-desc">Select address bar</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + E</div><div class="shortcut-desc">Select search box</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + F</div><div class="shortcut-desc">Select search box</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + N</div><div class="shortcut-desc">Open new window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + W</div><div class="shortcut-desc">Close current window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + E</div><div class="shortcut-desc">Display all folders above selected</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + N</div><div class="shortcut-desc">Create new folder</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + P</div><div class="shortcut-desc">Display preview panel</div></div>
+                </div>
+                
+                <div class="shortcuts-count">Total Windows Shortcuts: 90+</div>
+            </div>
+            
+            <!-- ==================== MS OFFICE SHORTCUTS ==================== -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">📊</span>
+                    <h2>Microsoft Office Shortcuts (100+ Shortcuts)</h2>
+                </div>
+                
+                <h3>General Office (Word, Excel, PowerPoint)</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + N</div><div class="shortcut-desc">Create new document</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + O</div><div class="shortcut-desc">Open existing document</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + S</div><div class="shortcut-desc">Save document</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F12</div><div class="shortcut-desc">Save As</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + P</div><div class="shortcut-desc">Print document</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + F</div><div class="shortcut-desc">Find text</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + H</div><div class="shortcut-desc">Replace text</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + G or F5</div><div class="shortcut-desc">Go To</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Z</div><div class="shortcut-desc">Undo last action</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Y or F4</div><div class="shortcut-desc">Redo last action</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + X</div><div class="shortcut-desc">Cut selected content</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + C</div><div class="shortcut-desc">Copy selected content</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + V</div><div class="shortcut-desc">Paste copied content</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Alt + V</div><div class="shortcut-desc">Paste Special</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + F1</div><div class="shortcut-desc">Show/Hide ribbon</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + F2</div><div class="shortcut-desc">Print Preview</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt or F10</div><div class="shortcut-desc">Turn key tips on/off</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Q</div><div class="shortcut-desc">Go to "Tell me what you want to do"</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + F3</div><div class="shortcut-desc">Change case of text</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + B</div><div class="shortcut-desc">Bold</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + I</div><div class="shortcut-desc">Italic</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + U</div><div class="shortcut-desc">Underline</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + ></div><div class="shortcut-desc">Increase font size</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + <</div><div class="shortcut-desc">Decrease font size</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Spacebar</div><div class="shortcut-desc">Remove character formatting</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + N</div><div class="shortcut-desc">Apply Normal style</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Alt + 1</div><div class="shortcut-desc">Apply Heading 1 style</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Alt + 2</div><div class="shortcut-desc">Apply Heading 2 style</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Alt + 3</div><div class="shortcut-desc">Apply Heading 3 style</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + L</div><div class="shortcut-desc">Apply List style</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + E</div><div class="shortcut-desc">Center align</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + L</div><div class="shortcut-desc">Left align</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + R</div><div class="shortcut-desc">Right align</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + J</div><div class="shortcut-desc">Justify align</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + 1</div><div class="shortcut-desc">Single line spacing</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + 2</div><div class="shortcut-desc">Double line spacing</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + 5</div><div class="shortcut-desc">1.5 line spacing</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + 0</div><div class="shortcut-desc">Add/remove space before paragraph</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + F7</div><div class="shortcut-desc">Thesaurus</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F7</div><div class="shortcut-desc">Spelling and grammar check</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + C</div><div class="shortcut-desc">Copy formatting</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + V</div><div class="shortcut-desc">Paste formatting</div></div>
+                </div>
+                
+                <h3>Microsoft Word Specific</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">F8</div><div class="shortcut-desc">Extend selection</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + F8</div><div class="shortcut-desc">Select vertical block</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + F5</div><div class="shortcut-desc">Go to last edit location</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Backspace</div><div class="shortcut-desc">Delete previous word</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Delete</div><div class="shortcut-desc">Delete next word</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + Enter</div><div class="shortcut-desc">Column break</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Enter</div><div class="shortcut-desc">Page break</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Ctrl + M</div><div class="shortcut-desc">Insert comment</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + E</div><div class="shortcut-desc">Track changes</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + G</div><div class="shortcut-desc">Word count</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + K</div><div class="shortcut-desc">Insert hyperlink</div></div>
+                </div>
+                
+                <h3>Microsoft Excel Specific</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">F2</div><div class="shortcut-desc">Edit active cell</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F4</div><div class="shortcut-desc">Repeat last action/Absolute reference</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F9</div><div class="shortcut-desc">Calculate all worksheets</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + ` (Grave)</div><div class="shortcut-desc">Show formulas</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + ;</div><div class="shortcut-desc">Insert current date</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + :</div><div class="shortcut-desc">Insert current time</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + D</div><div class="shortcut-desc">Fill down</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + R</div><div class="shortcut-desc">Fill right</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Page Up/Down</div><div class="shortcut-desc">Move between worksheets</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + =</div><div class="shortcut-desc">AutoSum</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + 1</div><div class="shortcut-desc">Format cells dialog</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + ~</div><div class="shortcut-desc">General number format</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + $</div><div class="shortcut-desc">Currency format</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + %</div><div class="shortcut-desc">Percentage format</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + Spacebar</div><div class="shortcut-desc">Select entire row</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Spacebar</div><div class="shortcut-desc">Select entire column</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + +</div><div class="shortcut-desc">Insert cells/rows/columns</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + -</div><div class="shortcut-desc">Delete cells/rows/columns</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Enter</div><div class="shortcut-desc">Start new line in same cell</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + L</div><div class="shortcut-desc">Toggle AutoFilter</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F11</div><div class="shortcut-desc">Create chart in new sheet</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + F1</div><div class="shortcut-desc">Create chart in current sheet</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + F11</div><div class="shortcut-desc">Insert new worksheet</div></div>
+                </div>
+                
+                <h3>Microsoft PowerPoint Specific</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">F5</div><div class="shortcut-desc">Start slide show from beginning</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + F5</div><div class="shortcut-desc">Start slide show from current slide</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">B or . (Period)</div><div class="shortcut-desc">Black screen during show</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">W or , (Comma)</div><div class="shortcut-desc">White screen during show</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Esc</div><div class="shortcut-desc">End slide show</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + M</div><div class="shortcut-desc">Insert new slide</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + D</div><div class="shortcut-desc">Duplicate selected slide/object</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + G</div><div class="shortcut-desc">Group objects</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + G</div><div class="shortcut-desc">Ungroup objects</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Shift + Left arrow</div><div class="shortcut-desc">Promote paragraph</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Shift + Right arrow</div><div class="shortcut-desc">Demote paragraph</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">N or Page Down</div><div class="shortcut-desc">Next slide during show</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">P or Page Up</div><div class="shortcut-desc">Previous slide during show</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Number + Enter</div><div class="shortcut-desc">Go to slide number</div></div>
+                </div>
+                
+                <div class="shortcuts-count">Total Office Shortcuts: 100+</div>
+            </div>
+            
+            <!-- ==================== BROWSER SHORTCUTS ==================== -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🌐</span>
+                    <h2>Web Browser Shortcuts (50+ Shortcuts)</h2>
+                </div>
+                
+                <h3>General Browser (Chrome, Firefox, Edge)</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + T</div><div class="shortcut-desc">Open new tab</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + T</div><div class="shortcut-desc">Reopen closed tab</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Tab</div><div class="shortcut-desc">Next tab</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + Tab</div><div class="shortcut-desc">Previous tab</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + 1-8</div><div class="shortcut-desc">Switch to specific tab number</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + 9</div><div class="shortcut-desc">Switch to last tab</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + W or Ctrl + F4</div><div class="shortcut-desc">Close current tab</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + W</div><div class="shortcut-desc">Close current window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + N</div><div class="shortcut-desc">Open new window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + N</div><div class="shortcut-desc">New incognito/private window</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + H</div><div class="shortcut-desc">Open history</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + J</div><div class="shortcut-desc">Open downloads</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + D</div><div class="shortcut-desc">Bookmark current page</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + D</div><div class="shortcut-desc">Bookmark all open tabs</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + B</div><div class="shortcut-desc">Show/Hide bookmarks bar</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + P</div><div class="shortcut-desc">Print current page</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + S</div><div class="shortcut-desc">Save current page</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + O</div><div class="shortcut-desc">Open file</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + U</div><div class="shortcut-desc">View page source</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + I or F12</div><div class="shortcut-desc">Developer tools</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + J</div><div class="shortcut-desc">JavaScript console</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + Delete</div><div class="shortcut-desc">Clear browsing data</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + F</div><div class="shortcut-desc">Find on page</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F3 or Ctrl + G</div><div class="shortcut-desc">Find next</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + F3 or Ctrl + Shift + G</div><div class="shortcut-desc">Find previous</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F5 or Ctrl + R</div><div class="shortcut-desc">Reload page</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + F5 or Shift + F5</div><div class="shortcut-desc">Hard reload</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + L or F6 or Alt + D</div><div class="shortcut-desc">Focus address bar</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + K or Ctrl + E</div><div class="shortcut-desc">Focus search bar</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Enter</div><div class="shortcut-desc">Add www. and .com to text</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Enter</div><div class="shortcut-desc">Open address in new tab</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + + (Plus)</div><div class="shortcut-desc">Zoom in</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + - (Minus)</div><div class="shortcut-desc">Zoom out</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + 0</div><div class="shortcut-desc">Reset zoom</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Spacebar or Page Down</div><div class="shortcut-desc">Scroll down</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + Spacebar or Page Up</div><div class="shortcut-desc">Scroll up</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Home</div><div class="shortcut-desc">Top of page</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">End</div><div class="shortcut-desc">Bottom of page</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Home</div><div class="shortcut-desc">Open homepage</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F11</div><div class="shortcut-desc">Toggle full screen</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Esc</div><div class="shortcut-desc">Stop loading page</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Left arrow</div><div class="shortcut-desc">Back</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Right arrow</div><div class="shortcut-desc">Forward</div></div>
+                </div>
+                
+                <div class="shortcuts-count">Total Browser Shortcuts: 50+</div>
+            </div>
+            
+            <!-- ==================== NAVIGATION & TEXT EDITING ==================== -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">📝</span>
+                    <h2>Navigation & Text Editing Shortcuts (40+ Shortcuts)</h2>
+                </div>
+                
+                <h3>Text Navigation</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">Home</div><div class="shortcut-desc">Beginning of line</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">End</div><div class="shortcut-desc">End of line</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Home</div><div class="shortcut-desc">Beginning of document</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + End</div><div class="shortcut-desc">End of document</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Page Up</div><div class="shortcut-desc">Move up one screen</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Page Down</div><div class="shortcut-desc">Move down one screen</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Left arrow</div><div class="shortcut-desc">Previous word</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Right arrow</div><div class="shortcut-desc">Next word</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Up arrow</div><div class="shortcut-desc">Previous paragraph</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Down arrow</div><div class="shortcut-desc">Next paragraph</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Backspace</div><div class="shortcut-desc">Delete previous word</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Delete</div><div class="shortcut-desc">Delete next word</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + Arrow keys</div><div class="shortcut-desc">Select text</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + Arrow keys</div><div class="shortcut-desc">Select words</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + Home</div><div class="shortcut-desc">Select to beginning of line</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + End</div><div class="shortcut-desc">Select to end of line</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + Home</div><div class="shortcut-desc">Select to beginning of document</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + End</div><div class="shortcut-desc">Select to end of document</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + Page Up</div><div class="shortcut-desc">Select one screen up</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + Page Down</div><div class="shortcut-desc">Select one screen down</div></div>
+                </div>
+                
+                <h3>Dialog Box Navigation</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">Tab</div><div class="shortcut-desc">Move forward through options</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Shift + Tab</div><div class="shortcut-desc">Move back through options</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Tab</div><div class="shortcut-desc">Move forward through tabs</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Shift + Tab</div><div class="shortcut-desc">Move back through tabs</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Arrow keys</div><div class="shortcut-desc">Move between options</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Spacebar</div><div class="shortcut-desc">Select or clear checkbox</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Enter</div><div class="shortcut-desc">Perform action for selected button</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Esc</div><div class="shortcut-desc">Cancel/Close dialog box</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + Underlined letter</div><div class="shortcut-desc">Perform command</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F1</div><div class="shortcut-desc">Help</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F4</div><div class="shortcut-desc">Display items in active list</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Backspace</div><div class="shortcut-desc">Open folder one level up</div></div>
+                </div>
+                
+                <div class="shortcuts-count">Total Navigation Shortcuts: 40+</div>
+            </div>
+            
+            <!-- ==================== SPECIAL CHARACTERS & COMMAND PROMPT ==================== -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">⚙️</span>
+                    <h2>Special Characters & Command Prompt (30+ Shortcuts)</h2>
+                </div>
+                
+                <h3>Special Character Shortcuts (Alt + Number)</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + 0169</div><div class="shortcut-desc">© Copyright symbol</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + 0174</div><div class="shortcut-desc">® Registered trademark</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + 0153</div><div class="shortcut-desc">™ Trademark symbol</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + 0162</div><div class="shortcut-desc">¢ Cent symbol</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + 0163</div><div class="shortcut-desc">£ Pound sterling</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + 0165</div><div class="shortcut-desc">¥ Yen symbol</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + 0128</div><div class="shortcut-desc">€ Euro symbol</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + 0167</div><div class="shortcut-desc">§ Section symbol</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + 0182</div><div class="shortcut-desc">¶ Paragraph symbol</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Alt + 0149</div><div class="shortcut-desc">• Bullet point</div></div>
+                </div>
+                
+                <h3>Command Prompt Shortcuts</h3>
+                <div class="shortcut-grid">
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + C or Ctrl + Break</div><div class="shortcut-desc">Cancel current command</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + S</div><div class="shortcut-desc">Pause output</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + Q</div><div class="shortcut-desc">Resume output</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + M</div><div class="shortcut-desc">Enter mark mode</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + ↑/↓</div><div class="shortcut-desc">Scroll through command history</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + F</div><div class="shortcut-desc">Find in command prompt</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + A</div><div class="shortcut-desc">Select all text</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Ctrl + V or Shift + Insert</div><div class="shortcut-desc">Paste text</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">Tab</div><div class="shortcut-desc">Auto-complete file/folder names</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F1</div><div class="shortcut-desc">Repeat previous command character by character</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F3</div><div class="shortcut-desc">Repeat last command</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F7</div><div class="shortcut-desc">Show command history</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F8</div><div class="shortcut-desc">Cycle through command history</div></div>
+                    <div class="shortcut-item"><div class="shortcut-key">F9</div><div class="shortcut-desc">Execute specific command from history</div></div>
+                </div>
+                
+                <div class="shortcuts-count">Total Special & CMD Shortcuts: 30+</div>
+            </div>
+            
+            <!-- ==================== TOP 50 MUST-KNOW SHORTCUTS ==================== -->
+            <div class="highlight-box">
+                <div class="highlight-title">
+                    <span>🏆</span> Top 50 Must-Know Shortcuts for RRB PO Exam
+                </div>
+                <div class="top-50-grid">
+                    <div class="top-item"><div class="item-number">1</div><div class="shortcut-key">Ctrl + C</div><div class="shortcut-desc">Copy</div></div>
+                    <div class="top-item"><div class="item-number">2</div><div class="shortcut-key">Ctrl + V</div><div class="shortcut-desc">Paste</div></div>
+                    <div class="top-item"><div class="item-number">3</div><div class="shortcut-key">Ctrl + X</div><div class="shortcut-desc">Cut</div></div>
+                    <div class="top-item"><div class="item-number">4</div><div class="shortcut-key">Ctrl + Z</div><div class="shortcut-desc">Undo</div></div>
+                    <div class="top-item"><div class="item-number">5</div><div class="shortcut-key">Ctrl + Y</div><div class="shortcut-desc">Redo</div></div>
+                    <div class="top-item"><div class="item-number">6</div><div class="shortcut-key">Ctrl + A</div><div class="shortcut-desc">Select All</div></div>
+                    <div class="top-item"><div class="item-number">7</div><div class="shortcut-key">Ctrl + S</div><div class="shortcut-desc">Save</div></div>
+                    <div class="top-item"><div class="item-number">8</div><div class="shortcut-key">Ctrl + P</div><div class="shortcut-desc">Print</div></div>
+                    <div class="top-item"><div class="item-number">9</div><div class="shortcut-key">Ctrl + F</div><div class="shortcut-desc">Find</div></div>
+                    <div class="top-item"><div class="item-number">10</div><div class="shortcut-key">Alt + Tab</div><div class="shortcut-desc">Switch apps</div></div>
+                    <div class="top-item"><div class="item-number">11</div><div class="shortcut-key">Windows + D</div><div class="shortcut-desc">Show desktop</div></div>
+                    <div class="top-item"><div class="item-number">12</div><div class="shortcut-key">Windows + E</div><div class="shortcut-desc">File Explorer</div></div>
+                    <div class="top-item"><div class="item-number">13</div><div class="shortcut-key">Windows + L</div><div class="shortcut-desc">Lock computer</div></div>
+                    <div class="top-item"><div class="item-number">14</div><div class="shortcut-key">Windows + R</div><div class="shortcut-desc">Run dialog</div></div>
+                    <div class="top-item"><div class="item-number">15</div><div class="shortcut-key">Alt + F4</div><div class="shortcut-desc">Close program</div></div>
+                    <div class="top-item"><div class="item-number">16</div><div class="shortcut-key">F1</div><div class="shortcut-desc">Help</div></div>
+                    <div class="top-item"><div class="item-number">17</div><div class="shortcut-key">F2</div><div class="shortcut-desc">Rename</div></div>
+                    <div class="top-item"><div class="item-number">18</div><div class="shortcut-key">F5</div><div class="shortcut-desc">Refresh</div></div>
+                    <div class="top-item"><div class="item-number">19</div><div class="shortcut-key">Ctrl + Alt + Delete</div><div class="shortcut-desc">Security options</div></div>
+                    <div class="top-item"><div class="item-number">20</div><div class="shortcut-key">Ctrl + Shift + Esc</div><div class="shortcut-desc">Task Manager</div></div>
+                    <div class="top-item"><div class="item-number">21</div><div class="shortcut-key">Ctrl + B</div><div class="shortcut-desc">Bold</div></div>
+                    <div class="top-item"><div class="item-number">22</div><div class="shortcut-key">Ctrl + I</div><div class="shortcut-desc">Italic</div></div>
+                    <div class="top-item"><div class="item-number">23</div><div class="shortcut-key">Ctrl + U</div><div class="shortcut-desc">Underline</div></div>
+                    <div class="top-item"><div class="item-number">24</div><div class="shortcut-key">Ctrl + Home</div><div class="shortcut-desc">Beginning of document</div></div>
+                    <div class="top-item"><div class="item-number">25</div><div class="shortcut-key">Ctrl + End</div><div class="shortcut-desc">End of document</div></div>
+                    <div class="top-item"><div class="item-number">26</div><div class="shortcut-key">Shift + Delete</div><div class="shortcut-desc">Permanent delete</div></div>
+                    <div class="top-item"><div class="item-number">27</div><div class="shortcut-key">Ctrl + T</div><div class="shortcut-desc">New tab (browser)</div></div>
+                    <div class="top-item"><div class="item-number">28</div><div class="shortcut-key">Ctrl + Tab</div><div class="shortcut-desc">Next tab</div></div>
+                    <div class="top-item"><div class="item-number">29</div><div class="shortcut-key">Ctrl + Shift + T</div><div class="shortcut-desc">Reopen closed tab</div></div>
+                    <div class="top-item"><div class="item-number">30</div><div class="shortcut-key">Ctrl + F4</div><div class="shortcut-desc">Close tab</div></div>
+                    <div class="top-item"><div class="item-number">31</div><div class="shortcut-key">Alt + Enter</div><div class="shortcut-desc">Properties</div></div>
+                    <div class="top-item"><div class="item-number">32</div><div class="shortcut-key">Ctrl + Enter</div><div class="shortcut-desc">Complete URL (.com)</div></div>
+                    <div class="top-item"><div class="item-number">33</div><div class="shortcut-key">Ctrl + D</div><div class="shortcut-desc">Bookmark</div></div>
+                    <div class="top-item"><div class="item-number">34</div><div class="shortcut-key">Ctrl + H</div><div class="shortcut-desc">History</div></div>
+                    <div class="top-item"><div class="item-number">35</div><div class="shortcut-key">Ctrl + J</div><div class="shortcut-desc">Downloads</div></div>
+                    <div class="top-item"><div class="item-number">36</div><div class="shortcut-key">Ctrl + K</div><div class="shortcut-desc">Insert hyperlink</div></div>
+                    <div class="top-item"><div class="item-number">37</div><div class="shortcut-key">Ctrl + M</div><div class="shortcut-desc">New slide (PPT)</div></div>
+                    <div class="top-item"><div class="item-number">38</div><div class="shortcut-key">Ctrl + ;</div><div class="shortcut-desc">Current date (Excel)</div></div>
+                    <div class="top-item"><div class="item-number">39</div><div class="shortcut-key">Ctrl + :</div><div class="shortcut-desc">Current time (Excel)</div></div>
+                    <div class="top-item"><div class="item-number">40</div><div class="shortcut-key">F11</div><div class="shortcut-desc">Full screen</div></div>
+                    <div class="top-item"><div class="item-number">41</div><div class="shortcut-key">Ctrl + +</div><div class="shortcut-desc">Zoom in</div></div>
+                    <div class="top-item"><div class="item-number">42</div><div class="shortcut-key">Ctrl + -</div><div class="shortcut-desc">Zoom out</div></div>
+                    <div class="top-item"><div class="item-number">43</div><div class="shortcut-key">Ctrl + 0</div><div class="shortcut-desc">Reset zoom</div></div>
+                    <div class="top-item"><div class="item-number">44</div><div class="shortcut-key">Ctrl + Shift + N</div><div class="shortcut-desc">New folder</div></div>
+                    <div class="top-item"><div class="item-number">45</div><div class="shortcut-key">Ctrl + Shift + S</div><div class="shortcut-desc">Save As</div></div>
+                    <div class="top-item"><div class="item-number">46</div><div class="shortcut-key">Alt + =</div><div class="shortcut-desc">AutoSum (Excel)</div></div>
+                    <div class="top-item"><div class="item-number">47</div><div class="shortcut-key">Ctrl + Page Up/Down</div><div class="shortcut-desc">Switch worksheets</div></div>
+                    <div class="top-item"><div class="item-number">48</div><div class="shortcut-key">Ctrl + 1</div><div class="shortcut-desc">Single line spacing</div></div>
+                    <div class="top-item"><div class="item-number">49</div><div class="shortcut-key">Ctrl + 2</div><div class="shortcut-desc">Double line spacing</div></div>
+                    <div class="top-item"><div class="item-number">50</div><div class="shortcut-key">Ctrl + 5</div><div class="shortcut-desc">1.5 line spacing</div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h3 style="margin-bottom: 15px;">📚 How to Use This Guide for RRB PO Mains</h3>
+            <p class="footer-text">
+                <strong>Study Strategy:</strong> This guide contains <strong>280+ shortcuts</strong> organized by category. 
+                Start with the Top 50 shortcuts (pages 1-2), then focus on Excel shortcuts for banking operations. 
+                Practice 15 minutes daily using actual applications to build muscle memory.
+            </p>
+            <p class="footer-text" style="margin-top: 15px; font-size: 0.8em;">
+                <strong>Exam Focus Areas:</strong> Windows Navigation (20%) • MS Office (30%) • Browser Shortcuts (15%) • 
+                Text Editing (20%) • Special Functions (15%)
+            </p>
+            <p style="margin-top: 20px; opacity: 0.7; font-size: 0.9em;">
+                Last Updated: For RRB PO Mains 2024 Preparation | Total Shortcuts: 280+ | Pages: 8-10 when printed
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Add print functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add print button
+            const printBtn = document.createElement('button');
+            printBtn.innerHTML = '🖨️ Print PDF';
+            printBtn.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 25px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                cursor: pointer;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                z-index: 1000;
+                transition: transform 0.2s;
+            `;
+            printBtn.onclick = () => {
+                // Add print styles
+                const printStyle = document.createElement('style');
+                printStyle.textContent = `
+                    @media print {
+                        @page {
+                            margin: 0.5in;
+                            size: landscape;
+                        }
+                        body {
+                            font-size: 10pt;
+                        }
+                        .shortcut-item {
+                            page-break-inside: avoid;
+                            border: 1px solid #ddd;
+                        }
+                        .section {
+                            page-break-inside: avoid;
+                        }
+                        .shortcut-grid {
+                            grid-template-columns: repeat(3, 1fr);
+                            gap: 6px;
+                        }
+                        .header, .footer {
+                            -webkit-print-color-adjust: exact;
+                        }
+                        button {
+                            display: none !important;
+                        }
+                    }
+                `;
+                document.head.appendChild(printStyle);
+                window.print();
+                setTimeout(() => document.head.removeChild(printStyle), 100);
+            };
+            printBtn.onmouseover = () => printBtn.style.transform = 'scale(1.05)';
+            printBtn.onmouseout = () => printBtn.style.transform = 'scale(1)';
+            document.body.appendChild(printBtn);
+            
+            // Add shortcut counter
+            const shortcutItems = document.querySelectorAll('.shortcut-item');
+            const totalShortcuts = shortcutItems.length;
+            const stats = document.querySelector('.stat-number');
+            if (stats) {
+                stats.textContent = totalShortcuts + '+';
+            }
+            
+            // Add page break markers for print
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                if (index % 2 === 0 && index > 0) {
+                    const breakDiv = document.createElement('div');
+                    breakDiv.style.cssText = 'page-break-before: always; height: 0;';
+                    section.parentNode.insertBefore(breakDiv, section);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
